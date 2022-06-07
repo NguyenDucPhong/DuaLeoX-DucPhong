@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+
+
+.top-nav {
+    background-color: #80BB35;
+    color: #ffff;
+}
+
+.top-nav span{
+    font-weight: 600;
+}
+.top-nav a{
+    text-decoration: none;
+    color: #ffff;
+    justify-content: space-around;
+}
+
+.nav-content a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.nav-content a:hover{
+    color: #80BB35;
+}
+
+.nav-content .item-polyci img{
+    margin-right: 20px;
+}
+
+.navbar {
+    background-color: #80BB35;  
+    padding: 0; 
+    height: 54px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.menu ul li{
+    display: inline-table;
+    position:relative;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffff;
+    padding: 15px;
+}
+
+.menu ul li a:hover{
+    background: #FE9705;
+    transition: all 150ms;
+}
+
+.menu ul li > .sub-menu, .sub-menu2{
+    display: none;
+    position: absolute;
+}
+
+.menu ul li:hover .sub-menu{
+    display: block;
+    color: black;
+}
+
+.sub-menu{
+    color: black;
+}
