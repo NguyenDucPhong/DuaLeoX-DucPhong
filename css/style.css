@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 
+.header .top-nav,
+.header .nav-content,
+.header .navbar{
+    padding-left: 100px;
+}
+
+
 
 
 /* Top-nav */
@@ -33,6 +40,12 @@
     text-decoration: none;
     font-weight: 600;
     color: black;
+}
+
+
+.nav-content{
+    margin-left: 100px;
+    padding: 0px;
 }
 
 .nav-content a:hover{
@@ -77,7 +90,7 @@
     
 }
 
-.active, .menu ul li a:hover{
+ .menu ul li a:hover{
     background: #FE9705;
     transition: all 150ms;
 }
@@ -130,22 +143,44 @@
 .list-food .title{
     background-color: #80BB35;
     border-radius: 20px;
-
+    padding: 5px;
     color: #ffff;
 }
 
+.list-food{
+    margin-left: 70px;
+    margin-right: 20px;
+    border: 1px solid #b1adadc8 ;
+    border-radius: 20px;
+    padding: 0px;
+}
 .food ul{
     list-style: none; 
     padding-left: 10px;
-    border-style: groove ;
+   
 }
 
-/* .food ul li{
+.food ul li{
+    padding-top: 20px;
     
-    
-} */
+}
 
 .food ul li a{
+    padding: 20px;
     text-decoration: none;
+    /* border-top: 1px solid #b1adadc8; */
+    box-sizing: border-box;
     color: black;
+}
+
+.food ul li a:hover{
+    color: #80BB35;
+    transition: all 150ms;
+}
+
+
+/* banner */
+.banner{
+   padding: 25px;
+   
 }
