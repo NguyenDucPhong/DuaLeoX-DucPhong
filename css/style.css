@@ -5,10 +5,6 @@
 .header .navbar{
     padding-left: 100px;
 }
-
-
-
-
 /* Top-nav */
 .top-nav {
     background-color: #80BB35;
@@ -135,6 +131,10 @@
     border: #ffff;
 }
 
+.sub-menu2 {
+    z-index: 1000;
+}
+
 /* slider */
 .head-title{
     margin: 0;
@@ -182,5 +182,99 @@
 /* banner */
 .banner{
    padding: 25px;
+ 
+}
+
+/* Fruit */
+.fruit ul{
+    list-style: none;
+    display: flex;
+}
+
+.fruit .section-title{
+    margin-left: 60px;
+    font-weight: 500;
+    background-color: #80BB35;
+    color: #ffff;
+    border-radius: 20px;
+    
+}
+.fruit .section-title h4{
+    margin: 0px;
+}
+
+.fruit ul li{
+    margin: 0px 15px 0px 15px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.fruit ul li a{
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #b1adadc8 ;
+}
+
+.fruit ul li a:hover{
+    color: #80BB35;
+}
+
+.list-card{
+    margin-left: 60px;
+    padding: 25px 0px 25px 0px;
+}
+
+.fruit .list-card .card{
+    border-radius: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.fruit .list-card .card img{
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 20px;
+}
+.fruit .list-card .over-lay{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.796);
+    width: 100%;
+    height: 15%;
+    top: 60%;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.fruit .list-card .add{
+    position: absolute;
+   top: 60%;
+   left: 30%;
+   opacity: 0;
+   transition: all 0.4s ease;
+   background-color: #ffff;
    
 }
+ .card:hover .add{
+     opacity: 1;
+     top: 35%;
+ }
+ .card:hover .over-lay{
+     opacity: 1;
+     top: 35%;
+ }
+
+ .fruit .list-card .add a i{
+    color:rgba(72, 69, 69, 0.4);
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+ }
+
+ .fruit .list-card .add a i:hover{
+     color: #80BB35;
+     transition: all 150ms;
+ }
+ .fruit .list-card .card p:hover{
+     color:#80BB35;
+     transition: all 150ms;
+ }
