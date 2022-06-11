@@ -21,7 +21,7 @@
     <!-- Header -->
     <div class="header">
 
-        <div class="top-nav">
+        <div class="top-nav hidden-sm hidden-xs">
             <div class="container">
                 <div class="row ">
                     <div class="col-9 px-3">
@@ -109,7 +109,10 @@
             </div>
         </div>
         <nav class="navbar">
-            <div class="container">
+            <div class="container sticky-top">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> -->
                 <div class="menu ">
                     <ul class="align-items-center">
                         <li>
@@ -158,7 +161,6 @@
                                         </ul>
                                     </li>
                                     <li>
-
                                         <ul>
                                             <li>
                                                 <h4>
@@ -190,8 +192,6 @@
                                         </ul>
                                     </li>
                                 </ul>
-
-
                             </div>
                         </li>
                         <li><a href="#">Tin tức</a></li>
@@ -219,7 +219,7 @@
         <div class="container mt-4">
             <div class="row">
 
-                <div class="list-food col-md-2">
+                <div class="list-food col-md-3">
                     <div class="title text-center">
                         <h5 class="head-title"><span>Danh mục</span></h5>
                     </div>
@@ -237,7 +237,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="carouselExampleCaptions" class="carousel slide col-md-9" data-bs-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide col-md-8" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -273,16 +273,17 @@
     <section id="banner">
         <div class="banner">
             <div class="container">
-                <div class="row justify-content-around">
-                    <div class="col-3">
+                <div class="row ">
+                    <div class="col-3 banner1">
                         <img src="./images/banner1.jpg" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 banner1">
                         <img src="./images/banner2.jpg" alt="">
                     </div>
                     <div class="col-3">
                         <img src="./images/banner3.jpg" alt="">
                     </div>
+                   
                 </div>
             </div>
         </div>
@@ -760,9 +761,41 @@
                         mỗi ngày cho bạn
                         </p>
                 </div>
+                <div class="section-content">
+                    <div class="blog-slider">
+                        <div class="owl-carousel owl-theme text-center" id="blog-slider">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./images/blog-img-2_large.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="">Tự chế món thạch sữa chua thanh long lung linh sắc màu</a>
+                                  <p class="card-text pt-1">Thạch sữa chua thanh long là món ăn tráng miệng tuyệt vời cho các mẹ. Đặc biệt là các bạn trẻ. Bởi vì món ăn này rất thanh mát, dễ ăn, đẹp da và trông rất màu sắc...</p>
+                                  <a href="#" class="btn btn-primary">Chi tiết</a>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 18rem;">
+                                <img src="./images/blog-img-3_large.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="">Tự chế món thạch sữa chua thanh long lung linh sắc màu</a>
+                                    <p class="card-text pt-1">Thạch sữa chua thanh long là món ăn tráng miệng tuyệt vời cho các mẹ. Đặc biệt là các bạn trẻ. Bởi vì món ăn này rất thanh mát, dễ ăn, đẹp da và trông rất màu sắc...</p>
+                                  <a href="#" class="btn btn-primary">chi tiết</a>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 18rem;">
+                                <img src="./images/blog-img-5_large.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="">Tự chế món thạch sữa chua thanh long lung linh sắc màu</a>
+                                    <p class="card-text pt-1">Thạch sữa chua thanh long là món ăn tráng miệng tuyệt vời cho các mẹ. Đặc biệt là các bạn trẻ. Bởi vì món ăn này rất thanh mát, dễ ăn, đẹp da và trông rất màu sắc...</p>
+                                  <a href="#" class="btn btn-primary">chi tiết</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
    </section>
+
+   
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

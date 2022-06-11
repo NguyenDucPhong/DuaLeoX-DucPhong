@@ -5,7 +5,7 @@
 .header .top-nav,
 .header .nav-content,
 .header .navbar{
-    padding-left: 100px;
+    /* padding-left: 100px; */
 }
 /* Top-nav */
 .top-nav {
@@ -42,7 +42,7 @@
 
 
 .nav-content{
-    margin-left: 100px;
+    /* margin-left: 100px; */
     padding: 0px;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .list-food{
-    margin-left: 70px;
+    /* margin-left: 70px; */
     margin-right: 20px;
     border: 1px solid #b1adadc8 ;
     border-radius: 20px;
@@ -158,7 +158,7 @@
 }
 .food ul{
     list-style: none; 
-    padding-left: 10px;
+    /* padding-left: 10px; */
    
 }
 
@@ -180,12 +180,20 @@
     transition: all 150ms;
 }
 
+.slide img{
+    width: 100%;
+    height: 500px;
+}
 
 /* banner */
 .banner{
    padding: 25px;
- 
 }
+
+.banner .banner1{
+    margin-right: 100px;
+}
+
 
 /* Fruit */
 .fruit ul{
@@ -194,7 +202,7 @@
 }
 
 .fruit .section-title{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     font-weight: 500;
     background-color: #80BB35;
     color: #ffff;
@@ -224,7 +232,7 @@
 }
 
 .list-card{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     padding: 25px 0px 25px 0px;
 }
 
@@ -303,7 +311,7 @@
     left: 10px;
  }
  .owl-next{
-    right: 90px ;
+    right: 25px ;
  }
  .owl-prev:hover,
  .owl-next:hover{
@@ -317,7 +325,7 @@
 }
 
 .vegetable .section-title{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     font-weight: 500;
     background-color: #80BB35;
     color: #ffff;
@@ -347,7 +355,7 @@
 }
 
 .list-card{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     padding: 25px 0px 25px 0px;
 }
 
@@ -413,7 +421,7 @@
 
  /* Banner-coltab */
  .banner-coltab {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-bottom: 30px;
  }
 
@@ -428,7 +436,7 @@
 }
 
 .dry-food .section-title{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     font-weight: 500;
     background-color: #80BB35;
     color: #ffff;
@@ -459,7 +467,7 @@
 }
 
 .list-card{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     padding: 25px 0px 25px 0px;
 }
 
@@ -529,7 +537,7 @@
 
  /* Banner-coltab2 */
  .banner-coltab2{
-    margin-left: 80px;
+    /* margin-left: 80px; */
     margin-bottom: 35px;
  }
 
@@ -540,16 +548,41 @@
 
  /* blog */
  .section-blog{
-    margin-left: 40px;
+    /* margin-left: 40px; */
  }
- .section-blog a{
+ .section-blog .section-title a{
     text-decoration: none;
     background-color: #80BB35;
     color: #ffff;
     border-radius: 30px;
     padding: 5px 15px 5px 15px;
  }
- .section-blog p{
+ .section-blog .section-title p{
     font-weight: 600;
     margin-top: 15px;
+ }
+
+ .section-content .card{
+    position: relative;
+    border-radius: 20px;
+ }
+ .section-content .card img{
+    border-radius: 20px;
+ }
+ .section-content a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    
+ }
+
+ .section-content a:hover{
+    color: #80BB35;
+    transform: all 150ms;
+   
+ }
+
+ .section-content .btn{
+    color: #ffff !important;
+    background-color: #80BB35;
  }

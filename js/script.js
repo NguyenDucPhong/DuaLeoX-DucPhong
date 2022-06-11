@@ -5,14 +5,14 @@ $(document).ready(function(){
         nav:true,
         dots: false,
         responsive:{
-            0:{
+            400:{
                 items:1
             },
-            600:{
-                items:2
-            },
-            1000:{
+            800:{
                 items:4
+            },
+            1200:{
+                items:5
             }
         }
     })
@@ -23,13 +23,31 @@ $(document).ready(function(){
         nav:true,
         dots: false,
         responsive:{
-            0:{
+            400:{
                 items:1
             },
-            600:{
-                items:2
+            800:{
+                items:4
             },
-            1000:{
+            1200:{
+                items:5
+            }
+        }
+    })
+
+    $('#blog-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: false,
+        responsive:{
+            400:{
+                items:1
+            },
+            800:{
+                items:3
+            },
+            1200:{
                 items:4
             }
         }
