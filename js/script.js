@@ -52,4 +52,22 @@ $(document).ready(function(){
             }
         }
     })
+
+    $('#feedback-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: false,
+        responsive:{
+            400:{
+                items:1
+            },
+            800:{
+                items:3
+            },
+            1200:{
+                items:4
+            }
+        }
+    })
 })
