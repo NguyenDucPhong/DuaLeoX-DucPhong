@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+a{
+    color: #FFFF !important;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #80BB35;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 25px;
+}
+.dropdown-item{
+    background-color: #80BB35;
+    width: 100%;
+}
+
+#main-header{
+    background-color: rgba(194, 214, 39, 0.885);
+
+}
+
