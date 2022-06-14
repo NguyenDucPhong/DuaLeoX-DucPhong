@@ -24,7 +24,6 @@ a{
 }
 .card-title{
     border-bottom: 1px solid rgba(141, 134, 134, 0.423);
-    
 }
 .login{
     background-color: #80BB35;
@@ -36,5 +35,22 @@ a{
     color: #000000 !important; 
     transition: all 400ms;
 }
+.goods{
+    width: 100px;
+}
+.goods img{
+    width: 60%;
+}
 
+.card-title{
+    background-color: #80BB35;
+    color: #FFFF;
+}
+.table .bx{
+    color: #1f1d1d;
+    font-size: 25px;
+}
+.table a i:hover{
+    color: #80BB35;
+}
 
