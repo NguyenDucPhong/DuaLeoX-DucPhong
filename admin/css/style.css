@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+a{
+    color: #FFFF !important;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #80BB35;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 25px;
+}
+.dropdown-item{
+    background-color: #80BB35;
+    width: 100%;
+}
+
+#main-header{
+    background-color: #c2d627e2;
+    align-items: center;
+}
+.card-title{
+    border-bottom: 1px solid rgba(141, 134, 134, 0.423);
+    
+}
+.login{
+    background-color: #80BB35;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.login:hover{
+    color: #000000 !important; 
+    transition: all 400ms;
+}
+
+

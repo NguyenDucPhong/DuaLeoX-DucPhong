@@ -13,7 +13,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#">Admin panel</a>
+          <a class="navbar-brand" href="#">Trang quản trị</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -21,10 +21,10 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class='bx bxs-user'></i> Not Logged In
+                    <i class='bx bxs-user'></i> Chưa đăng nhập
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><i class='bx bxs-user-circle' ></i> Action</a></li>
+                  <li><a class="dropdown-item" href="#"><i class='bx bxs-user-circle' ></i> Đăng nhập</a></li>
                 </ul>
               </li>
             </ul>
@@ -37,7 +37,7 @@
         <div class="row">
           <div class="col-auto">
             <h2>
-              <a href=""><i class='bx bx-lemon' ></i> Admin</a>
+              <a href=""><i class='bx bx-lemon' ></i> DuaLeoX</a>
             </h2>
           </div>
         </div>
@@ -46,16 +46,27 @@
 
     <section id="login" class="py-5 ">
       <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-6 mx-auto ">
-            <div class="card" style="width: 18rem;">
-              <div class="card-title">
-                <h4>Account login</h4>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mx-auto align-items-center">
+            <div class="card" style="width: 100%;">
+              <div class="card-title text-center py-3" style="background-color: #98d44a; color:#FFFF">
+                <h4>Đăng nhập tài khoản</h4>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <form action="index.html" class="p-4">
+                  <div class="form-group pb-4">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="" class="form-control">
+                  </div>
+                
+                    <div class="mt-4 text-center ">
+                      <a href="#" class="login">Đăng nhập</a>
+                    </div>
+                </form>
               </div>
             </div>
           </div>

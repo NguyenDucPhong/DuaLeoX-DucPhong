@@ -2,11 +2,7 @@
 
 
 
-.header .top-nav,
-.header .nav-content,
-.header .navbar{
-    /* padding-left: 100px; */
-}
+
 /* Top-nav */
 .top-nav {
     background-color: #80BB35;
@@ -547,9 +543,7 @@
  }
 
  /* blog */
- .section-blog{
-    /* margin-left: 40px; */
- }
+ 
  .section-blog .section-title a{
     text-decoration: none;
     background-color: #80BB35;
