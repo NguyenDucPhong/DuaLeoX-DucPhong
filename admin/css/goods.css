@@ -54,3 +54,7 @@ a{
     color: #80BB35;
 }
 
+
+.modal-body .form-group{
+    margin-bottom: 15px;
+}
