@@ -6,13 +6,13 @@ $(document).ready(function(){
         dots: false,
         responsive:{
             400:{
-                items:1
+                items:2
             },
             800:{
                 items:4
             },
             1200:{
-                items:5
+                items:6
             }
         }
     })
@@ -24,13 +24,13 @@ $(document).ready(function(){
         dots: false,
         responsive:{
             400:{
-                items:1
+                items:2
             },
             800:{
                 items:4
             },
             1200:{
-                items:5
+                items:6
             }
         }
     })
@@ -67,6 +67,22 @@ $(document).ready(function(){
             },
             1200:{
                 items:4
+            }
+        }
+    })
+
+    $('#banner2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: false,
+        responsive:{
+        400:{
+                items:1
+            },
+           
+            1200:{
+                items:3
             }
         }
     })

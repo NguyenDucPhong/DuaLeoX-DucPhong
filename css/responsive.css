@@ -1,0 +1,148 @@
+.icon-nav{
+    display: none;
+}
+
+
+@media screen and (max-width:420px) {
+    .top-nav{
+        display: none;
+    }
+    .top-nav-mobile{
+        display: block;
+    }
+    .policy{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .icon-cart{
+        display: none;
+    }
+    .icon-cart-mobile{
+        display: block;
+        font-size: 30px;
+        padding: 0;
+    }
+    .nav-content img{
+        width: 90%;
+    }
+   .list-food{
+    display: none;
+   }
+   .slide img{
+    height: 200px !important;
+   }
+   .banner img{
+    width: 23.5rem !important;
+   }
+   .banner .owl-next{
+    right: 0px;
+   }
+   .owl-prev{
+    left: 0em;
+ }
+ .owl-next{
+    right: 0.5em ;
+ }
+ .icon-nav{
+    display: block;
+    font-size: 30px;
+ }
+ .icon-nav button{
+    display: block;
+    background-color: #FFFF ;
+    color: rgb(44, 42, 42) ;
+    border-width: 0px;
+ }
+ .list-card .row >*{
+    width: auto;
+}
+.list-card{
+    padding-top: 0;
+}
+.list-card .card{
+    width: 11rem !important;
+    margin-right: 15px;
+}
+
+/* fruit */
+.fruit .tabs-title{
+    display: none;
+}
+.fruit .section-title{
+    margin: auto;
+}
+.fruit .tabs-title-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #80BB35;
+   
+}
+.fruit .tabs-title-mobile li i{
+   border: 0.11px solid rgba(89, 87, 87, 0.44);
+   font-size: 20px;
+}
+.fruit .content{
+    flex-direction: column;
+}
+
+/* vegetable */
+.vegetable .tabs-title{
+    display: none;
+}
+.vegetable .section-title{
+    margin: auto;
+}
+.vegetable .tabs-title-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #80BB35;
+   
+}
+.vegetable .tabs-title-mobile li i{
+   border: 0.11px solid rgba(89, 87, 87, 0.44);
+   font-size: 20px;
+}
+.vegetable .content{
+    flex-direction: column;
+}
+
+/* dry-food */
+.dry-food .tabs-title{
+    display: none;
+}
+.dry-food .section-title{
+    margin: auto;
+}
+.dry-food .tabs-title-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #80BB35;
+   
+}
+.dry-food .tabs-title-mobile li i{
+   border: 0.11px solid rgba(89, 87, 87, 0.44);
+   font-size: 20px;
+}
+.dry-food .content{
+    flex-direction: column;
+}
+
+.banner-coltab2 img{
+    width: 100%;
+}
+.blog-slider .card{
+    width: 100%;
+}
+
+.feedback-slider .card{
+    width: 100%;
+}
+}

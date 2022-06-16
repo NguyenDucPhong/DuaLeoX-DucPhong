@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 
+.row {
+    --bs-gutter-x: 0rem;
+}
+i{
+    vertical-align: middle;
+}
 
+img{
+    object-fit: cover;
 
+}
 
 /* Top-nav */
 .top-nav {
@@ -13,6 +22,9 @@
     margin: 10px 0px 10px 0px;
     
 }
+.top-nav-mobile{
+    display: none;
+}
 
 .top-nav i,
 .top-nav span,
@@ -22,12 +34,21 @@
 
 .top-nav span{
     font-weight: 600;
+
 }
 .top-nav a{
     text-decoration: none;
     color: #ffff;
     justify-content: space-around;
 }
+
+
+/*  mobile */
+.icon-cart-mobile{
+    display: none;
+}
+
+
 
 /* nav-content */
 .nav-content a{
@@ -50,7 +71,7 @@
     margin-right: 20px;
 }
 
-.btn {
+.icon-cart .btn {
     background-color: #FE9705;
     border: #FE9705;
     color: #ffff;
@@ -133,6 +154,33 @@
     z-index: 1000;
 }
 
+/* navbar-mobile */
+.offcanvas-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.offcanvas-header{
+    padding-bottom: 40px;
+    border: 1px solid rgb(151, 145, 145);
+}
+
+.offcanvas-title .input-group{
+    margin-top: 100px;
+}
+
+.offcanvas-body ul li{
+    color: #80BB35;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.offcanvas-body ul li a{
+    text-decoration: none;
+    color: #80BB35;
+    font-size: 20px;
+} 
+
 /* slider */
 .head-title{
     margin: 0;
@@ -186,9 +234,6 @@
    padding: 25px;
 }
 
-.banner .banner1{
-    margin-right: 100px;
-}
 
 
 /* Fruit */
@@ -207,16 +252,17 @@
 }
 .fruit .section-title h4{
     margin: 0px;
+    font-size: 20px;
 }
 
 .fruit ul li{
     margin: 0px 15px 0px 15px;
     padding: 0;
-    font-size: 20px;
+    
 }
 
 .fruit ul li a{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: #333;
@@ -234,7 +280,6 @@
 
 .fruit .list-card .card{
     border-radius: 20px;
-   
     position: relative;
     overflow: hidden;
 }
@@ -304,15 +349,16 @@
  }
 
  .owl-prev{
-    left: 10px;
+    left: 0;
  }
  .owl-next{
-    right: 25px ;
+    right: 10px ;
  }
  .owl-prev:hover,
  .owl-next:hover{
     background-color: #80BB35 !important;
  }
+
 
  /* vegetable */
  .vegetable ul{
@@ -330,6 +376,7 @@
 }
 .vegetable .section-title h4{
     margin: 0px;
+    font-size: 20px;
 }
 
 .vegetable ul li{
@@ -339,7 +386,7 @@
 }
 
 .vegetable ul li a{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: #333;
@@ -441,6 +488,7 @@
 }
 .dry-food .section-title h4{
     margin: 0px;
+    font-size: 20px;
 }
 
 .dry-food ul li{
@@ -451,7 +499,7 @@
 }
 
 .dry-food ul li a{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: #333;
@@ -465,7 +513,11 @@
 .list-card{
     /* margin-left: 60px; */
     padding: 25px 0px 25px 0px;
+    margin-right: 20px;
+    
 }
+
+
 
 .list-dryfood{
     display: flex;
@@ -531,6 +583,10 @@
     color: #FE9705;
  }
 
+ .dry-food .tabs-title-mobile{
+    display: none;
+ }
+
  /* Banner-coltab2 */
  .banner-coltab2{
     /* margin-left: 80px; */
@@ -539,7 +595,8 @@
 
  .banner-coltab2 img{
     border-radius: 20px;
-    
+    width: 90%;
+    margin-bottom: 20px;
  }
 
  /* blog */
@@ -548,17 +605,18 @@
     text-decoration: none;
     background-color: #80BB35;
     color: #ffff;
-    border-radius: 30px;
+ 
     padding: 5px 15px 5px 15px;
  }
  .section-blog .section-title p{
-    font-weight: 600;
+    
     margin-top: 15px;
  }
 
  .section-content .card{
     position: relative;
     border-radius: 20px;
+    width: 18rem;
  }
  .section-content .card img{
     border-radius: 20px;
@@ -591,11 +649,11 @@
     text-decoration: none;
     background-color: #80BB35;
     color: #ffff;
-    border-radius: 30px;
+  
     padding: 5px 15px 5px 15px;
  }
  .section-feedback .section-title p{
-    font-weight: 600;
+   
     margin-top: 15px;
  }
 
@@ -607,6 +665,7 @@
  .feedback-slider .card{
    margin-bottom: 20px;
     align-items: center;
+    width: 18rem;
  }
 
 /* footer */
