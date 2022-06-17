@@ -294,4 +294,11 @@
 .banner-coltab2 img{
     width: 21rem;
 }
+.owl-next{
+   
+}
+
+ .list-card .card{
+    width: 13rem !important; 
+}
 }

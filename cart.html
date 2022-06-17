@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DualeoX - Giao diện bán hàng tốt nhất Haravan</title>
 
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/boxicons.min.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 
 <body>
 
     <!-- Header -->
-    <div class="header">
+    <div id="header">
 
-        <div class="top-nav hidden-sm hidden-xs">
+        <div class="top-nav">
             <div class="container">
                 <div class="row ">
                     <div class="col-9 px-3">
@@ -40,7 +42,7 @@
                     </div>
 
                     <div class="col-3 ">
-                        <ul class="list-inline d-flex gap-2">
+                        <ul class="list-inline d-flex gap-2 justify-content-end">
                             <li>
                                 <a href="">
                                     <i class='bx bxs-user'></i>
@@ -52,8 +54,23 @@
                             </li>
                             <li>
                                 <a href="">
-                                    Đăng kí
+                                    Đăng ký
                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav-mobile top-nav">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-auto mx-auto ">
+                        <ul class="list-inline">
+                            <li>
+
+                                <i class='bx bxs-mobile'> Hotline: </i>
+                                <span>0978660288</span>
                             </li>
                         </ul>
                     </div>
@@ -63,10 +80,19 @@
         <div class="nav-content p-3 my-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-3 p-0">
+                    <div class="col-2 icon-nav">
+                        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <i class='bx bx-menu'></i>
+                        </button>
+                    </div>
+                    <div class="col-auto col-md-8 col-lg-3  p-0 logo">
                         <img src="./images/logo.png" alt="#">
                     </div>
-                    <div class="col-xs-12 col-md-7">
+                    <div class="icon-cart-mobile col-auto col-md-2">
+                        <a href=""><i class='bx bxs-shopping-bag'></i></a>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-7 policy">
                         <div class="policy d-flex justify-content-around">
                             <div class="item-polyci d-flex align-items-center">
                                 <img src="./images/van_chuyen.png" alt="">
@@ -100,20 +126,23 @@
 
 
                     </div>
-                    <div class="col-xs-12 col-md-1 col-lg-2 hidden-sm hidden-xs">
+                    <div class="col-xs-12 col-md-1 col-lg-2 icon-cart">
                         <button class="btn btn-brand"><i class='bx bxs-shopping-bag'></i> Giỏ hàng
                             <span>(0)</span></button>
                     </div>
+
                 </div>
+                <div class="menu-bar">
+
+                </div>
+
+
             </div>
         </div>
-        <nav class="navbar">
-            <div class="container sticky-top">
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button> -->
-                <div class="menu ">
-                    <ul class="align-items-center">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container sticky-top ">
+                <div class="menu">
+                    <ul class="align-items-center navbar-nav me-auto mb-2 mb-lg-0">
                         <li>
                             <a class="active" href="">Trang chủ <i class='bx bx-chevron-right'></i></a>
                             <ul class="sub-menu">
@@ -200,26 +229,150 @@
                     </ul>
 
                 </div>
-                <div class="col-3">
+                <div class="col-3 ms-auto">
                     <div class="menu-search">
                         <form action="">
                             <input type="text" class="input" id="search" placeholder="Tìm sản phẩm">
                         </form>
                     </div>
                 </div>
-
             </div>
-
         </nav>
+        <div class="navbar-mobile">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <div class="form-group">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                            <a href=""><i class='bx bxs-user'></i> Đăng nhập</a>
+                            <span> hoặc</span>
+                            <a href=""> đăng ký</a>
+                        </h5>
+                        <div class="input-group mt-3" style="width:350px">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm"
+                                aria-label="Dollar amount (with dot and two decimal places)">
+                            <span class="input-group-text"><i class='bx bx-search'></i></span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close text-reset mb-auto" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+
+                </div>
+                <div class="offcanvas-body">
+
+                    <div class="dropdown mt-3">
+                        <ul class="list-inline">
+                            <li>
+                                MENU
+                            </li>
+                            <li>
+                                <a href="" class=" dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Trang chủ</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Trang chủ 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Trang chủ 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Trang chủ 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Sản phẩm</a></li>
+                            <li><a href="">Tin tức</a></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                            <li><a href="">Demo tuỳ chọn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <section class="main-cart-page main-container">
-        <div class="main container">
-           
+    <section class="bread-crumb py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-inline d-flex">
+                        <li>
+                            <a href="">Trang chủ </a>
+                            <span><i class='bx bx-chevron-right'></i></span>
+                        </li>
+                        <li>
+                            <span>Giỏ hàng của bạn - DuaLeoX</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-   <section id="footer">
+    <section class="main-cart-page main-container">
+        <div class="main container">
+            <form action="">
+                <div class="cart-head py-2">
+                    <div style="width:19%;" class="text-center">Sản phẩm</div>
+                    <div style="width:28%;" class="text-center">Thông tin sản phẩm</div>
+                    <div style="width:17%;" class="text-center">Đơn giá</div>
+                    <div style="width:18%;" class="text-center">Số lượng</div>
+                    <div style="width:15%;" class="text-center">Thành tiền</div>
+                    <div style="width:5%;" class="text-center">Xoá</div>
+                </div>
+                <div class="cart-body my-3">
+                    <div class="item-cart">
+                        <div style="width:19%;" class="text-center">
+                            <a href=""><img src="./images/ChanhDayDoUc.webp" alt=""></a>
+                        </div>
+                        <div style="width:28%;" class="text-center"><span>Chanh dây đỏ Úc</span></div>
+                        <div style="width:17%;" class="text-center">400.000đ</div>
+                        <div style="width:18%;" class="text-center">
+                            <div class="input-sl">
+                                <input aria-label="quantity" style="width: 80px" class="input-qty" placeholder="1"
+                                    type="number">
+                            </div>
+                        </div>
+                        <div style="width:15%;" class="text-center">400.000đ</div>
+                        <div style="width:5%;" class="text-center"><a href=""><i class='bx bxs-trash'></i></a></div>
+                    </div>
+                    <div class="item-cart">
+                        <div style="width:19%;" class="text-center">
+                            <a href=""><img src="./images/DuaLeoDaLat.webp" alt=""></a>
+                        </div>
+                        <div style="width:28%;" class="text-center"><span>Dưa leo Đà Lạt</span></div>
+                        <div style="width:17%;" class="text-center">65.000đ</div>
+                        <div style="width:18%;" class="text-center">
+                            <div class="input-sl">
+                                <input aria-label="quantity" style="width: 80px" class="input-qty" placeholder="1"
+                                    type="number">
+                            </div>
+                        </div>
+                        <div style="width:15%;" class="text-center">65.000đ</div>
+                        <div style="width:5%;" class="text-center"><a href=""><i class='bx bxs-trash'></i></a></div>
+                    </div>
+                    <div class="item-cart">
+                        <div style="width:19%;" class="text-center">
+                            <a href=""><img src="./images/HongDoMy.webp" alt=""></a>
+                        </div>
+                        <div style="width:28%;" class="text-center"><span>Hồng đỏ Mỹ</span></div>
+                        <div style="width:17%;" class="text-center">150.000đ</div>
+                        <div style="width:18%;" class="text-center">
+                            <div class="input-sl">
+                                <input aria-label="quantity" style="width: 80px" class="input-qty" placeholder="1"
+                                    type="number">
+                            </div>
+                        </div>
+                        <div style="width:15%;" class="text-center">150.000đ</div>
+                        <div style="width:5%;" class="text-center"><a href=""><i class='bx bxs-trash'></i></a></div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="cart-mobile">
+
+        </div>
+    </section>
+
+
+    <section id="footer">
         <div class="container">
             <div class="footer-inner">
                 <div class="container">
@@ -229,19 +382,20 @@
                                 <h5>Liên hệ</h5>
                                 <ul>
                                     <li>
-                                        <p>Chúng tôi chuyên cung cấp các sản phẩm, thực phẩm sạch an toàn cho sức khoẻ con người</p>
+                                        <p>Chúng tôi chuyên cung cấp các sản phẩm, thực phẩm sạch an toàn cho sức khoẻ
+                                            con người</p>
                                     </li>
                                     <li>
                                         <i class='bx bxs-location-plus'></i>
                                         <p>268 Cầu Giấy, Quận Cầu Giấy, Hà Nội, Vietnam</p>
                                     </li>
                                     <li>
-                                        <i class='bx bxs-phone-call' ></i>
+                                        <i class='bx bxs-phone-call'></i>
                                         <p>0912117494
                                             Thứ 2 - Chủ nhật: 9:00 - 18:00</p>
                                     </li>
                                     <li>
-                                        <i class='bx bx-envelope' ></i>
+                                        <i class='bx bx-envelope'></i>
                                         <p>dualeotheme@gmail.com</p>
                                     </li>
                                 </ul>
@@ -283,8 +437,8 @@
                 </div>
             </div>
         </div>
-   </section>
-   
+    </section>
+
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
