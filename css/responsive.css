@@ -142,7 +142,156 @@
     width: 100%;
 }
 
+.section-blog .owl-next{
+    right: 0;
+}
+
+.section-feedback .owl-next{
+    right: 0;
+}
 .feedback-slider .card{
     width: 100%;
+}
+}
+
+
+/* iPad Air */
+@media screen and (max-width:850px) and (min-width:421px) {
+    .top-nav{
+        display: none;
+    }
+    .top-nav-mobile{
+        display: block
+    }
+    .nav-content{
+        border-bottom: 1px solid rgba(116, 111, 111, 0.555);
+    }
+    .icon-cart{
+        display: none;
+        
+    }
+    .nav-content .logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .icon-cart-mobile{
+        display: flex;
+        font-size: 30px;
+        padding: 0;
+        justify-content: center;
+    }
+    .icon-nav{
+        display: flex;
+        font-size: 30px;
+        flex-direction: column;
+        justify-content: start;
+     }
+     .icon-nav button{
+        display:block;
+      
+        background-color: #FFFF ;
+        color: rgb(44, 42, 42) ;
+        border-width: 0px;
+     }
+     .navbar{
+        display: none;
+     }
+     .tablet{
+        display: flex;
+        flex-direction: column-reverse;
+     }
+     .tablet .list-food{
+        margin-top: 20px;
+     }
+     .slide img{
+        height: 400px ;
+    }
+     /* .carousel-inner img{
+       width: 20%;
+     } */
+
+     /* Banner */
+     .banner .item{
+        width: 21rem !important;
+    }
+    /* fruit */
+    .fruit .tabs-title{
+        display: none;
+    }
+    .fruit .section-title{
+        margin: auto;
+    }
+    .fruit .tabs-title-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #80BB35;
+       
+    }
+    .fruit .tabs-title-mobile li i{
+       border: 0.11px solid rgba(89, 87, 87, 0.44);
+       font-size: 20px;
+    }
+    .fruit .content{
+        flex-direction: column;
+    }
+    
+
+    /* vegetable */
+.vegetable .tabs-title{
+    display: none;
+}
+.vegetable .section-title{
+    margin: auto;
+}
+.vegetable .tabs-title-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #80BB35;
+   
+}
+.vegetable .tabs-title-mobile li i{
+   border: 0.11px solid rgba(89, 87, 87, 0.44);
+   font-size: 20px;
+}
+.vegetable .content{
+    flex-direction: column;
+}
+.dry-food .tabs-title{
+    display: none;
+}
+.dry-food .section-title{
+    margin: auto;
+}
+.dry-food .tabs-title-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #80BB35;
+   
+}
+.dry-food .tabs-title-mobile li i{
+   border: 0.11px solid rgba(89, 87, 87, 0.44);
+   font-size: 20px;
+}
+.dry-food .content{
+    flex-direction: column;
+}
+
+.section-blog .card{
+    width: 21rem;
+}
+
+.section-feedback .card{
+    width: 21rem;
+}
+
+.banner-coltab2 img{
+    width: 21rem;
 }
 }

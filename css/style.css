@@ -233,10 +233,17 @@ img{
 .banner{
    padding: 25px;
 }
+.banner .item{
+    width: 25rem !important;
+}
 
 
 
 /* Fruit */
+.fruit .tabs-title-mobile{
+    display: none;
+}
+
 .fruit ul{
     list-style: none;
     display: flex;
@@ -307,6 +314,15 @@ img{
    background-color: #ffff;
    
 }
+
+.list-card .card .discount{
+    position: absolute;
+    color: #ffff;
+    padding: 0px 10px 0px 10px;
+    background-color: #FE9705;
+    top: 10%;
+    
+}
  .card:hover .add{
      opacity: 1;
      top: 35%;
@@ -322,6 +338,7 @@ img{
     height: 35px;
     line-height: 35px;
  }
+
 
  .fruit .list-card .add a i:hover{
      color: #80BB35;
@@ -400,11 +417,20 @@ img{
 .list-card{
     /* margin-left: 60px; */
     padding: 25px 0px 25px 0px;
+    
+}
+.list-card a{
+    text-decoration: none;
+    color: #333;
+}
+
+.list-card .old-price{
+    text-decoration:line-through rgba(152, 150, 150, 0.612);
+    color: rgba(109, 105, 105, 0.781);
 }
 
 .vegetable .list-card .card{
     border-radius: 20px;
-   
     position: relative;
     overflow: hidden;
 }
@@ -448,6 +474,9 @@ img{
     line-height: 35px;
  }
 
+ .vegetable .tabs-title-mobile{
+    display: none;
+ }
  .vegetable .list-card .add a i:hover{
      color: #80BB35;
      transition: all 150ms;
@@ -456,6 +485,7 @@ img{
      color:#80BB35;
      transition: all 150ms;
  }
+
 
  .vegetable .list-card .card span{
     font-weight: 600;
@@ -600,12 +630,16 @@ img{
  }
 
  /* blog */
+
+ .section-blog{
+    border-top: 2px solid #FE9705;
+ }
  
  .section-blog .section-title a{
     text-decoration: none;
     background-color: #80BB35;
     color: #ffff;
- 
+    border-radius: 20px;
     padding: 5px 15px 5px 15px;
  }
  .section-blog .section-title p{
@@ -643,13 +677,14 @@ img{
 
  .section-feedback {
     margin-top: 30px;
+    border-top: 2px solid #FE9705;
  }
 
  .section-feedback .section-title a{
     text-decoration: none;
     background-color: #80BB35;
     color: #ffff;
-  
+    border-radius: 20px;
     padding: 5px 15px 5px 15px;
  }
  .section-feedback .section-title p{

@@ -9,7 +9,7 @@ $(document).ready(function(){
                 items:2
             },
             800:{
-                items:4
+                items:3
             },
             1200:{
                 items:6
@@ -27,7 +27,7 @@ $(document).ready(function(){
                 items:2
             },
             800:{
-                items:4
+                items:3
             },
             1200:{
                 items:6
@@ -45,7 +45,7 @@ $(document).ready(function(){
                 items:1
             },
             800:{
-                items:3
+                items:2
             },
             1200:{
                 items:4
@@ -63,7 +63,7 @@ $(document).ready(function(){
                 items:1
             },
             800:{
-                items:3
+                items:2
             },
             1200:{
                 items:4
@@ -77,10 +77,12 @@ $(document).ready(function(){
         nav:true,
         dots: false,
         responsive:{
-        400:{
+            300:{
                 items:1
             },
-           
+            800:{
+                items:2
+            },
             1200:{
                 items:3
             }
