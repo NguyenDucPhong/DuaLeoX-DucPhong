@@ -26,7 +26,7 @@
                     <i class='bx bxs-user'></i> Chưa đăng nhập
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><i class='bx bxs-user-circle' ></i> Đăng nhập</a></li>
+                  <li><a class="dropdown-item" href="./login.html"><i class='bx bxs-user-circle' ></i> Đăng nhập</a></li>
                 </ul>
               </li>
             </ul>
@@ -42,21 +42,28 @@
           <div class="col-md-6 mx-auto align-items-center">
             <div class="card" style="width: 100%;">
               <div class="card-title text-center py-3" style="background-color: #98d44a; color:#FFFF">
-                <h4>Đăng nhập tài khoản</h4>
+                <h4>Đăng ký tài khoản</h4>
               </div>
               <div class="card-body">
-                <form  class="p-4">
-                  <div class="form-group pb-4">
+                <form  class="p-2" >
+                  <div class="form-group p-2">
+                    <label for="username">Họ và tên</label>
+                    <input type="" class="form-control" id="username">
+                  </div>
+                  <div class="form-group p-2">
                     <label for="email">Email</label>
                     <input type="" class="form-control" id="email">
                   </div>
-                  <div class="form-group">
+                  <div class="form-group p-2">
                     <label for="password">Mật khẩu</label>
                     <input type="" class="form-control" id="password">
                   </div>
+                  <div class="form-group p-2">
+                    <label for="password">Nhập lại mật khẩu</label>
+                    <input type="" class="form-control">
+                  </div>
                     <div class="mt-4 text-center ">
-                      <button href="#" class="login btn btn-success" onclick="login()">Đăng nhập</button>
-                      <a href="./signUp.html" class="sign-up btn btn-success">Đăng kí</a>
+                      <a class="sign-up btn btn-success" onclick="signup()">Đăng kí</a>
                     </div>
                 </form>
               </div>

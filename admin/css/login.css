@@ -26,15 +26,7 @@ a{
     border-bottom: 1px solid rgba(141, 134, 134, 0.423);
     
 }
-.login{
-    background-color: #80BB35;
-    padding: 10px;
-    border-radius: 10px;
-    
-}
-.login:hover{
-    color: #000000 !important; 
-    transition: all 400ms;
-}
+
+
 
 

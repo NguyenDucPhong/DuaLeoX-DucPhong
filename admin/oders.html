@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="/DualeoX-DucPhong/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/DualeoX-DucPhong/css/boxicons.min.css">
+  <link rel="stylesheet" href="/DualeoX-DucPhong/admin/css/index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+      <a class="navbar-brand" href="#">Trang quản trị</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Sản phẩm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./items.html">Mặt hàng</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./discount.html">Khuyến mại</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./guess.html">Khách hàng</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./oders.html">Đơn hàng</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./user.html">Tài khoản</a>
+          </li>
+          
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class='bx bxs-user'></i> Xin chào, Phong!
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class='bx bxs-user-circle'></i> Thông tin cá nhân</a></li>
+              <li><a class="dropdown-item" href="#"><i class='bx bxs-user-x'></i> Logout</a></li>
+
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="main-header" class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-auto">
+          <h2>
+            <a href=""><i class='bx bx-lemon'></i> DuaLeoX</a>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="search" class="py-4">
+    <div class="container">
+        <div class="row">
+          
+           <div class="col-md-4 ms-auto">
+            <div class="input-group ">
+                <input type="text" class="form-control" placeholder="Tìm kiếm"
+                  aria-label="Dollar amount (with dot and two decimal places)">
+                <span class="input-group-text" style="background-color: #80BB35; color:#FFFF"><i class='bx bx-search' ></i></span>
+              </div>
+           </div>
+              
+               
+              
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-title text-center py-2">
+              <h2>DANH SÁCH ĐƠN HÀNG</h2>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">SST</th>
+                  <th scope="col">Ảnh</th>
+                  <th scope="col">Tên sản phẩm</th>
+                  <th scope="col">Tên khách hàng</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Số lượng</th>
+                  <th scope="col">Thời gian mua</th>
+                  <th scope="col">Đơn giá</th>
+                  
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td class="goods"><img src="/DualeoX-DucPhong/images/ChanhDayDoUc.webp" alt=""></td>
+                  <td>Chanh dây đỏ Úc</td>
+                  <td>Nguyễn Đăng Phương</td>
+                  <td>phuong62th5@gmail.com</td>
+                  <td>10</td>
+                  <td>16/6/2022</td>
+                  <td>4.000.000₫</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td class="goods"><img src="/DualeoX-DucPhong/images/DuaLeoDaLat.webp" alt=""></td>
+                  <td>Dưa leo Đà Lạt</td>
+                  <td>Nguyễn Quang Thái</td>
+                  <td>thai62th5@gmail.com</td>
+                  <td>2</td>
+                  <td>14/6/2022</td>
+                  <td>130.000₫</td>
+                 
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="my-5 py-5" style="background-color: #80BB35;">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <p style="font-size: 20px; color: #FFFF;">
+            Copyright © 2022 Admin Panel
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="/DualeoX-DucPhong/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
