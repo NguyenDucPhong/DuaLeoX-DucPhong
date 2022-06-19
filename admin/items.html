@@ -21,21 +21,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+            <a class="nav-link" href="./goods.html">Sản phẩm</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" >Sản phẩm</a>
+            <a class="nav-link" href="./items.html">Mặt hàng</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mặt hàng</a>
+            <a class="nav-link" href="./discount.html">Khuyến mại</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Khuyến mại</a>
+            <a class="nav-link" href="./guess.html">Khách hàng</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tài khoản</a>
+            <a class="nav-link" href="./oders.html">Đơn hàng</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="./user.html">Tài khoản</a>
+          </li>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
@@ -70,6 +72,35 @@
     <section id="search" class="py-4">
         <div class="container">
             <div class="row">
+              <div class="col-md-2">
+                <a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#additems">
+                  <i class='bx bx-plus-medical'></i>
+                  Thêm mặt hàng
+                </a>
+                <div class="modal fade" id="additems" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color: #80BB35; color: #FFFF;">
+                        <h5 class="modal-title" id="exampleModalLabel">Thêm mặt hàng</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="">
+                          <div class="form-group">
+                            <label for="">Mặt hàng</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-success">Thêm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
                <div class="col-md-4 ms-auto">
                 <div class="input-group ">
                     <input type="text" class="form-control" placeholder="Tìm kiếm"
@@ -90,7 +121,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-title text-center py-2">
-                  <h2>DANH SÁCH SẢN PHẨM</h2>
+                  <h2>DANH SÁCH MẶT HÀNG</h2>
                 </div>
                 <table class="table">
                   <thead>
