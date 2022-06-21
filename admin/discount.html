@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Admin-Discount</title>
     <link rel="stylesheet" href="/DualeoX-DucPhong/css/bootstrap.min.css">
     <link rel="stylesheet" href="/DualeoX-DucPhong/css/boxicons.min.css">
     <link rel="stylesheet" href="/DualeoX-DucPhong/admin/css/discount.css">
 </head>
-<body>
+<body onload="render()">
     
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
@@ -23,9 +23,7 @@
           <li class="nav-item">
             <a class="nav-link" href="./index.html">Sản phẩm</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./items.html">Mặt hàng</a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link" href="./discount.html">Khuyến mại</a>
           </li>
@@ -43,11 +41,11 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              <i class='bx bxs-user'></i> Xin chào, Phong!
+              <i class='bx bxs-user'></i> Xin chào, Admin!
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#"><i class='bx bxs-user-circle'></i> Thông tin cá nhân</a></li>
-              <li><a class="dropdown-item" href="#"><i class='bx bxs-user-x'></i> Logout</a></li>
+              <li><a class="dropdown-item" href="/DualeoX-DucPhong/login.html"><i class='bx bxs-user-x'></i> Logout</a></li>
 
             </ul>
           </li>
@@ -73,11 +71,11 @@
         <div class="container">
             <div class="row">
               <div class="col-md-2">
-                <a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#discount">
+                <a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#discountmodal" onclick="fix()">
                   <i class='bx bx-plus-medical'></i>
                   Thêm khuyến mại
                 </a>
-                <div class="modal fade" id="discount" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="discountmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header" style="background-color: #80BB35; color: #FFFF;">
@@ -85,30 +83,44 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <form action="">
+                        <form >
                           <div class="form-group">
                             <label for="">Tên sản phẩm</label>
-                            <select class="form-select" aria-label="Default select example">
-                              <option selected></option>
-                              <option value="1"></option>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Phân loại</label>
+                            <select class="form-select" aria-label="Default select example" id="classify">
+                              <option >Rau củ</option>
+                              <option >Hoa quả</option>
+                              <option >Thịt</option>
+                              <option >Hải sản</option>
                             </select>
                           </div>
       
                           <div class="form-group">
                             <label for="">giảm giá</label>
                             <div class="input-group">
-                              <input type="text" class="form-control"
+                              <input type="text" class="form-control" id="discount"
                                 aria-label="Dollar amount (with dot and two decimal places)">
                               <span class="input-group-text">%</span>
                             </div>
                           </div>
-      
+                          <div class="form-group">
+                            <label for="">Thời gian thêm</label>
+                            <input type="date" class="form-control" id="date">
+                          </div>
+                          <div class="form-group">
+                            <input type="hidden"  id="index">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" id="save" class="btn btn-success" onclick="change()">Lưu</button>
+                            <button type="button" id="add1" class="btn btn-success" onclick="add()">Thêm</button>
+                          </div>
                         </form>
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-success">Thêm</button>
-                      </div>
+                     
                     </div>
                   </div>
                 </div>
@@ -136,75 +148,8 @@
                 <div class="card-title text-center py-2">
                   <h2>DANH SÁCH KHUYẾN MẠI</h2>
                 </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">SST</th>
-                      <th scope="col">Ảnh</th>
-                      <th scope="col">Tên sản phẩm</th>
-                      <th scope="col">Mặt hàng</th>
-                      
-                      <th scope="col">Khuyến mại</th>
-                      <th scope="col">Thời gian thêm</th>
-                      
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td class="goods"><img src="/DualeoX-DucPhong/images/ChanhDayDoUc.webp" alt=""></td>
-                      <td>Chanh dây đỏ Úc</td>
-                      <td>Trái cây</td>
-                     
-                      <td>10%</td>
-                      <td>14/6/2022</td>
-                      
-                      <td><a href=""><i class='bx bx-edit'></i></a>
-                        <a href=""><i class='bx bx-trash'></i></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td class="goods"><img src="/DualeoX-DucPhong/images/DuaLeoDaLat.webp" alt=""></td>
-                      <td>Dưa leo Đà Lạt</td>
-                      <td>Rau củ</td>
-                      
-                      <td>20%</td>
-                      <td>14/6/2022</td>
-                     
-                      <td><a href=""><i class='bx bx-edit'></i></a>
-                        <a href=""><i class='bx bx-trash'></i></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td class="goods"><img src="/DualeoX-DucPhong/images/HanhTay.webp" alt=""></td>
-                      <td>Hành tây</td>
-                      <td>Rau củ</td>
-                    
-                      <td>10%</td>
-                      <td>14/6/2022</td>
-                     
-                      <td><a href=""><i class='bx bx-edit'></i></a>
-                        <a href=""><i class='bx bx-trash'></i></a>
-                      </td>
-    
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td class="goods"><img src="/DualeoX-DucPhong/images/HongDoMy.webp" alt=""></td>
-                      <td>Hồng đỏ Mỹ</td>
-                      <td>Trái cây</td>
-                     
-                      <td>10%</td>
-                      <td>14/6/2022</td>
-                      
-                      <td><a href=""><i class='bx bx-edit'></i></a>
-                        <a href=""><i class='bx bx-trash'></i></a>
-                      </td>
-                    </tr>
-                  </tbody>
+                <table class="table" id="table">
+                 
                 </table>
               </div>
             </div>
@@ -229,5 +174,6 @@
     
 
       <script src="/DualeoX-DucPhong/js/bootstrap.bundle.min.js"></script>
+      <script src="./js/discount.js"></script>
 </body>
 </html>

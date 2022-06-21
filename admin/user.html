@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Admin-User</title>
     <link rel="stylesheet" href="/DualeoX-DucPhong/css/bootstrap.min.css">
     <link rel="stylesheet" href="/DualeoX-DucPhong/css/boxicons.min.css">
     <link rel="stylesheet" href="/DualeoX-DucPhong/admin/css/user.css">
 </head>
-<body>
+<body onload="render()">
     
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
@@ -23,9 +23,7 @@
           <li class="nav-item">
             <a class="nav-link" href="./index.html">Sản phẩm</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./items.html">Mặt hàng</a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link" href="./discount.html">Khuyến mại</a>
           </li>
@@ -43,16 +41,14 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              <i class='bx bxs-user'></i> Xin chào, Phong!
+              <i class='bx bxs-user'></i> Xin chào, Admin!
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#"><i class='bx bxs-user-circle'></i> Thông tin cá nhân</a></li>
-              <li><a class="dropdown-item" href="#"><i class='bx bxs-user-x'></i> Logout</a></li>
+              <li><a class="dropdown-item" href="/DualeoX-DucPhong/login.html"><i class='bx bxs-user-x'></i> Logout</a></li>
 
             </ul>
           </li>
-
-
         </ul>
       </div>
     </div>
@@ -72,46 +68,7 @@
     <section id="search" class="py-4">
         <div class="container">
             <div class="row">
-              <div class="col-md-2">
-                <a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#adduser">
-                  <i class='bx bx-plus-medical'></i>
-                  Thêm tài khoản
-                </a>
-                <div class="modal fade" id="adduser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header" style="background-color: #80BB35; color: #FFFF;">
-                        <h5 class="modal-title" id="exampleModalLabel">Thêm tài khoản</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <form action="">
-                          <div class="form-group">
-                            <label for="">Tên</label>
-                            <input type="text" class="form-control">
-                          </div>
-                          <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="text" class="form-control">
-                          </div>
-                          <div class="form-group">
-                            <label for="">Mật khẩu</label>
-                            <input type="text" class="form-control">
-                          </div>
-                          <div class="form-group">
-                            <label for="">Nhập lại mật khẩu</label>
-                            <input type="text" class="form-control">
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-success">Thêm</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
                <div class="col-md-4 ms-auto">
                 <div class="input-group ">
                     <input type="text" class="form-control" placeholder="Tìm kiếm"
@@ -132,46 +89,8 @@
                 <div class="card-title text-center py-2">
                   <h2>DANH SÁCH TÀI KHOẢN</h2>
                 </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">SST</th>
-                      <th scope="col">Tên</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Mật khẩu</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                   
-                      <td>Nguyễn Đức Phong</td>
-                      <td>phong62th5@gmail.com</td>
-                     
-                      <td>phongthatnghiep</td>
-                    
-                      
-                      <td><a href=""><i class='bx bx-edit'></i></a>
-                        <a href=""><i class='bx bx-trash'></i></a>
-                      </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                     
-                        <td>Phạm Phương Uyên</td>
-                        <td>uyenthanglong@gmail.com</td>
-                       
-                        <td>uyen10diem</td>
-                      
-                        
-                        <td><a href=""><i class='bx bx-edit'></i></a>
-                          <a href=""><i class='bx bx-trash'></i></a>
-                        </td>
-                      </tr>
-                   
+                <table class="table" id="table">
                   
-                   
                   </tbody>
                 </table>
               </div>
@@ -193,5 +112,6 @@
       </section>
     
       <script src="/DualeoX-DucPhong/js/bootstrap.bundle.min.js"></script>
+      <script src="/DualeoX-DucPhong/js/login.js"></script>
 </body>
 </html>
