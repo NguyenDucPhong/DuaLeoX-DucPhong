@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuaLeoX - Thanh toán hoá đơn</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+    <div class="title py-4" style="background-color:#7fbf2cf1; color: #FFF;">
+        <div class="container">
+            <h2>DualeoX</h2>
+        </div>
+    </div>
+    <div class="oder">
+        <div class="container">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        <i class='bx bxs-cart'></i> Hiển thị thông tin đơn hàng
+                    </button>
+
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="product-image d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <img src="./images/ChanhDayDoUc.webp" alt="">
+                            <span>Chanh dây đỏ Úc</span>
+                            </div>
+                            <div class="">
+                                <span >400.000đ</span>
+                            </div>
+                          </div>
+                          <div class="product-image d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <img src="./images/DuaLeoDaLat.webp" alt="">
+                            <span>Dưa leo Đà Lạt</span>
+                            </div>
+                            <div class="">
+                                <span >65.000đ</span>
+                            </div>
+                          </div>
+                      <div class="product-image d-flex justify-content-between align-items-center">
+                        <div class="">
+                            <img src="./images/HongDoMy.webp" alt="">
+                        <span>Hồng đỏ Mỹ</span>
+                        </div>
+                        <div class="">
+                            <span >150.000đ</span>
+                        </div>
+                      </div>
+                      <div class="price d-flex justify-content-between align-items-center">
+                        <p>Tạm tính</p>
+                        <p>615.000đ</p>
+                      </div>
+                      <div class="ship d-flex justify-content-between align-items-center">
+                        <p>Phí vận chuyển</p>
+                        <p>50.000đ</p>
+                      </div>
+                      <div class="sum-price d-flex justify-content-between align-items-center">
+                        <p>Tổng cộng</p>
+                        <p>675.000đ</p>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+
+
+
+    <div class="guess py-4">
+        <div class="container">
+            <h4>Thông tin giao hàng</h4>
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="name" class="form-label">Họ tên</label>
+                    <input type="text" class="form-control" id="name" >
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPhoned4" class="form-label">Số điện thoại</label>
+                  <input type="phone" class="form-control" id="phone">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Địa chỉ</label>
+                  <input type="text" class="form-control" id="address" >
+                </div>
+                
+                <fieldset class="row md-12">
+                    <legend class="col-form-label col-sm-4 pt-0">Phương thức thanh toán</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Thanh toán bằng tiền mặt
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          Thanh toán quá thẻ
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="col-6 pt-2">
+                    <a href="./cart.html">Quay lại giỏ hàng </a>
+                  </div>
+                <div class="col-6">
+                  <button  class="btn btn-success" onclick="add()" >Hoàn tất mua hàng</button>
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/guess.js"></script>
+</body>
+</html>
