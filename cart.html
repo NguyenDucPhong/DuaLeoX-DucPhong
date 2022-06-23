@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body >
 
     <!-- Header -->
     <div id="header">
@@ -68,7 +68,7 @@
                     <div class="col-auto mx-auto ">
                         <ul class="list-inline">
                             <li>
-
+                               
                                 <i class='bx bxs-mobile'> Hotline: </i>
                                 <span>0978660288</span>
                             </li>
@@ -127,8 +127,8 @@
 
                     </div>
                     <div class="col-xs-12 col-md-1 col-lg-2 icon-cart">
-                        <button class="btn btn-brand"><i class='bx bxs-shopping-bag'></i> Giỏ hàng
-                            <span>(0)</span></button>
+                        <a class="btn btn-brand"><i class='bx bxs-shopping-bag'></i> Giỏ hàng
+                            (<span>0</span>)</a>
                     </div>
 
                 </div>
@@ -307,7 +307,7 @@
 
     <section class="main-cart-page main-container">
         <div class="main container">
-            <form action="">
+            <form action="" class="form-cart">
                 <div class="cart-head py-2">
                     <div style="width:19%;" class="text-center">Sản phẩm</div>
                     <div style="width:28%;" class="text-center">Thông tin sản phẩm</div>
@@ -317,7 +317,7 @@
                     <div style="width:5%;" class="text-center">Xoá</div>
                 </div>
                 <div class="cart-body my-3">
-                    <div class="item-cart">
+                    <!-- <div class="item-cart">
                         <div style="width:19%;" class="text-center">
                             <a href=""><img src="./images/ChanhDayDoUc.webp" alt=""></a>
                         </div>
@@ -361,23 +361,24 @@
                         </div>
                         <div style="width:15%;" class="text-center">150.000đ</div>
                         <div style="width:5%;" class="text-center"><a href=""><i class='bx bxs-trash'></i></a></div>
-                    </div>
+                    </div> -->
+                </div>
+                <div class="cart-submit">
+                    <!-- <div class="col-12 checkout">
+                        <ul class="list-inline">
+                            <li>
+                                <div class="d-flex justify-content-end">
+                                <span>Tổng tiền: </span>
+                                <strong><span>615.000đ</span></strong>
+                            </div>
+                            <a href="./index.html" class="btn btn-success"><span>Tiếp tục mua hàng</span></a>
+                            <a href="./pay.html" class="btn btn-success"><span>Tiến hành thanh toán</span></a>
+                            </li>
+                        </ul>
+                    </div> -->
                 </div>
             </form>
-            <div class="cart-submit">
-                <div class="col-12 checkout">
-                    <ul class="list-inline">
-                        <li>
-                            <div class="d-flex justify-content-end">
-                            <span>Tổng tiền: </span>
-                            <strong><span>615.000đ</span></strong>
-                        </div>
-                        <a href="./index.html" class="btn btn-success"><span>Tiếp tục mua hàng</span></a>
-                        <a href="./pay.html" class="btn btn-success"><span>Tiến hành thanh toán</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+           
         </div>
         <div class="cart-mobile container ">
             <div class="cart-title">
@@ -457,7 +458,7 @@
                     <button class="btn btn-success mb-4"><span>Tiến hành mua hàng</span></button>
                 </div>
             </form>
-        </div>
+        </div>S
     </section>
 
 
@@ -534,6 +535,7 @@
     <script src="./js/owl.carousel.min.js"></script>
 
     <script src="./js/script.js"></script>
+    <script src="./js/addtocart.js"></script>
 </body>
 
 </html>
