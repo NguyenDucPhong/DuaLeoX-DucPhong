@@ -82,17 +82,16 @@ function edit(index){
   document.getElementById("name").value = listProduct[index].name;
   document.getElementById("classify").value = listProduct[index].classify;
   document.getElementById("origin").value = listProduct[index].origin;
-  document.getElementById("image").value = listProduct[index].image;
+  // document.getElementById("image").value = listProduct[index].image;
   document.getElementById("amount").value = listProduct[index].amount;
   document.getElementById("date").value = listProduct[index].date;
   document.getElementById("price").value = listProduct[index].price;
   document.getElementById("index").value = index;
 
 
-  document.getElementById("exampleModalLabel").textContent = "Chỉnh sửa sản phẩm"
-  document.getElementById("save").style.display = "block"
-  document.getElementById("add1").style.display = "none"
-  
+  document.getElementById("exampleModalLabel").textContent = "Chỉnh sửa sản phẩm";
+  document.getElementById("save").style.display = "block";
+  document.getElementById("add1").style.display = "none";
 }
 
 function change(){

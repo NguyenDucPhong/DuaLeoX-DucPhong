@@ -66,11 +66,21 @@ function render(){
     <td>${value.userName}</td>
     <td>${value.email}</td>
     <td>${value.passWord}</td>
-    <td> <a href=""><i class='bx bx-trash'></i></a>
+    <td> <a href="" onclick="deleteUser(${index})"><i class='bx bx-trash'></i></a>
     </td>
   </tr>
   `
   })
 
   document.getElementById("table").innerHTML = table;
+}
+
+function deleteUser(index){
+    event.preventDefault();
+    var listUser = localStorage.getItem("list-user")? JSON.parse(localStorage.getItem("list-user")) : [];
+    if(confirm("Bạn có muốn xoá tài khoản này không?")){
+        listUser.splice(index, 1);
+    }
+    localStorage.setItem("list-user", JSON.stringify(listUser));
+    render();
 }
